@@ -1150,6 +1150,74 @@ pre .javascript .function {
 .book-mark-link-fixed {
   top: -2px;
 }
+.github-corner :hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+.github-corner svg {
+  border: 0;
+  color: #fff;
+  fill: #222;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+@media (max-width: 991px) {
+  .github-corner svg {
+    color: #222;
+    fill: #fff;
+  }
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1226,7 +1294,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b6ffff;
+  background: #e5af37;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1562,7 +1630,7 @@ pre .javascript .function {
   margin-top: 40px;
   text-align: center;
 }
-.use-motion .post_block,
+.use-motion .post-block,
 .use-motion .pagination,
 .use-motion .comments {
   opacity: 0;
@@ -2037,16 +2105,6 @@ pre .javascript .function {
 .followme .social-list .social-link .label {
   display: block;
   font-size: 14px;
-}
-.post-body p a {
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
-}
-.post-body p a:hover {
-  color: #fc6423;
-  border-bottom: none;
-  border-bottom: 1px solid #fc6423;
 }
 .category-all-page .category-all-title {
   text-align: center;
@@ -2830,6 +2888,13 @@ ul.breadcrumb li + li:last-child {
   color: #fff;
   cursor: pointer;
 }
+.posts-expand .post-title-link {
+  color: #37839d;
+  text-shadow: 0 -1px 5px rgba(0,0,0,0.4);
+}
+.back-to-top {
+  background-color: #5f899f;
+}
 body {
   background: url("/images/yourbackground.png");
   background-repeat: no-repeat;
@@ -2842,10 +2907,21 @@ body {
 }
 .sidebar {
   opacity: 0.9;
+  border-radius: 1.5em;
 }
 .header-inner {
   background: rgba(255,255,255,0.9);
+  border-radius: 1.5em;
 }
 .popup {
   opacity: 0.9;
+}
+.use-motion .post-block,
+.use-motion .pagination,
+.use-motion .comments {
+  opacity: 0;
+  border-radius: 1.5em;
+}
+.sidebar-inner {
+  border-radius: 1.5em;
 }
