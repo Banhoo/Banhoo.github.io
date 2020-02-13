@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-12T12:13:29.407Z</updated>
+  <updated>2020-02-13T14:06:58.290Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,43 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/02/12/test/"/>
-    <id>http://yoursite.com/2020/02/12/test/</id>
-    <published>2020-02-12T11:00:16.000Z</published>
-    <updated>2020-02-12T12:13:29.407Z</updated>
+    <title>welcome-to-Banhoo</title>
+    <link href="http://yoursite.com/2020/02/13/welcome-to-Banhoo/"/>
+    <id>http://yoursite.com/2020/02/13/welcome-to-Banhoo/</id>
+    <published>2020-02-13T14:06:09.000Z</published>
+    <updated>2020-02-13T14:06:58.290Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
     <summary type="html">
     
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>article title</title>
-    <link href="http://yoursite.com/2020/02/04/article-title/"/>
-    <id>http://yoursite.com/2020/02/04/article-title/</id>
-    <published>2020-02-04T12:27:25.000Z</published>
-    <updated>2020-02-12T14:30:32.216Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test_my_site</title>
-    <link href="http://yoursite.com/2020/02/04/test-my-site/"/>
-    <id>http://yoursite.com/2020/02/04/test-my-site/</id>
-    <published>2020-02-04T10:24:49.000Z</published>
-    <updated>2020-02-12T14:30:32.227Z</updated>
-    
-    <summary type="html">
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      
     
     </summary>
     

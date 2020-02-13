@@ -4,37 +4,11 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="/2020/02/12/test/"/>
-      <url>/2020/02/12/test/</url>
+      <title>welcome-to-Banhoo</title>
+      <link href="/2020/02/13/welcome-to-Banhoo/"/>
+      <url>/2020/02/13/welcome-to-Banhoo/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>article title</title>
-      <link href="/2020/02/04/article-title/"/>
-      <url>/2020/02/04/article-title/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test_my_site</title>
-      <link href="/2020/02/04/test-my-site/"/>
-      <url>/2020/02/04/test-my-site/</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<a id="more"></a>]]></content>
       
       
       
