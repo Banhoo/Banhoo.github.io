@@ -1140,7 +1140,7 @@ pre .javascript .function {
   }
 }
 .book-mark-link::before {
-  color: 222"#222";
+  color: #37c6c0;
   content: '\f02e';
   font-family: 'FontAwesome';
   font-size: 32px;
@@ -1294,7 +1294,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff8749;
+  background: #96ffc2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1598,6 +1598,16 @@ pre .javascript .function {
   50%, 70% {
     transform: scale(1.1);
   }
+}
+.reading-progress-bar {
+  background: #37c6c0;
+  display: block;
+  height: 3px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 0;
+  z-index: 1500;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -2893,7 +2903,7 @@ ul.breadcrumb li + li:last-child {
   text-shadow: 0 -1px 5px rgba(0,0,0,0.4);
 }
 .back-to-top {
-  background-color: #5f899f;
+  background-color: #37c6c0;
 }
 body {
   background: url("/images/yourbackground.jpg");
