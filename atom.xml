@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-13T14:06:58.290Z</updated>
+  <updated>2020-02-16T04:50:26.658Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>welcome-to-Banhoo</title>
-    <link href="http://yoursite.com/2020/02/13/welcome-to-Banhoo/"/>
-    <id>http://yoursite.com/2020/02/13/welcome-to-Banhoo/</id>
-    <published>2020-02-13T14:06:09.000Z</published>
-    <updated>2020-02-13T14:06:58.290Z</updated>
+    <title>书记/《算法竞赛（入门经典）》/第1章 程序设计入门</title>
+    <link href="http://yoursite.com/2020/02/16/%E4%B9%A6%E8%AE%B0/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%EF%BC%88%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%EF%BC%89%E3%80%8B/%E7%AC%AC1%E7%AB%A0%20%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2020/02/16/%E4%B9%A6%E8%AE%B0/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%EF%BC%88%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%EF%BC%89%E3%80%8B/%E7%AC%AC1%E7%AB%A0%20%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%85%A5%E9%97%A8/</id>
+    <published>2020-02-16T04:00:00.000Z</published>
+    <updated>2020-02-16T04:50:26.658Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<h1 id="第1章-程序设计入门"><a href="#第1章-程序设计入门" class="headerlink" title="第1章 程序设计入门"></a>第1章 程序设计入门</h1><h2 id="算数表达式"><a href="#算数表达式" class="headerlink" title="算数表达式"></a>算数表达式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;%.1f\n&quot;,8.0&#x2F;5.0);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>上面的<strong>%.1f</strong>意为输出结果保留小数点后1位。</li><li>整数值用<strong>%d</strong>输出，实数用<strong>%f</strong>输出。</li><li>整数/整数=整数；浮点数/浮点数=浮点数。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;math.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;%.8f\n&quot;,1+2*sqrt(3)&#x2F;(5-0.1));</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><strong>5-0.1</strong>是什么？<br>确切的说法是：整数先变成浮点数，然后浮点数-浮点数=浮点数。</li><li>数学函数<strong>sqrt(x)</strong>作用是计算x的算术平方根，返回值类型为double。</li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-      
+      &lt;h1 id=&quot;第1章-程序设计入门&quot;&gt;&lt;a href=&quot;#第1章-程序设计入门&quot; class=&quot;headerlink&quot; title=&quot;第1章 程序设计入门&quot;&gt;&lt;/a&gt;第1章 程序设计入门&lt;/h1&gt;&lt;h2 id=&quot;算数表达式&quot;&gt;&lt;a href=&quot;#算数表达式&quot; class=&quot;headerlink&quot; title=&quot;算数表达式&quot;&gt;&lt;/a&gt;算数表达式&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int main()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	printf(&amp;quot;%.1f\n&amp;quot;,8.0&amp;#x2F;5.0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="书记" scheme="http://yoursite.com/categories/%E4%B9%A6%E8%AE%B0/"/>
+    
+      <category term="《算法竞赛（入门经典）》" scheme="http://yoursite.com/categories/%E4%B9%A6%E8%AE%B0/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%EF%BC%88%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%EF%BC%89%E3%80%8B/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>welcome to Banhoo</title>
+    <link href="http://yoursite.com/2020/02/13/welcome-to-Banhoo/"/>
+    <id>http://yoursite.com/2020/02/13/welcome-to-Banhoo/</id>
+    <published>2020-02-13T14:06:09.000Z</published>
+    <updated>2020-02-16T03:37:13.182Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试一下效果</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;测试一下效果&lt;/p&gt;
     
     </summary>
     
@@ -49,10 +71,8 @@
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;
     
     </summary>
     
