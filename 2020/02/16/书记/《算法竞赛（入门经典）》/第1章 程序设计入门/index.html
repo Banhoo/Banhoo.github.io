@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-loading-bar.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
@@ -33,7 +33,7 @@
 <meta property="og:description" content="第1章 程序设计入门算数表达式 123456#include&lt;stdio.h&gt;int main()&amp;#123;	printf(&quot;%.1f\n&quot;,8.0&#x2F;5.0);	return 0;&amp;#125;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-16T04:00:00.000Z">
-<meta property="article:modified_time" content="2020-02-16T08:58:06.511Z">
+<meta property="article:modified_time" content="2020-02-18T03:37:44.059Z">
 <meta property="article:author" content="Banhooxx">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -137,7 +137,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">4</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -213,10 +213,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-16 12:00:00 / 修改时间：16:58:06" itemprop="dateCreated datePublished" datetime="2020-02-16T12:00:00+08:00">2020-02-16</time>
+              <time title="创建时间：2020-02-16 12:00:00" itemprop="dateCreated datePublished" datetime="2020-02-16T12:00:00+08:00">2020-02-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-18 11:37:44" itemprop="dateModified" datetime="2020-02-18T11:37:44+08:00">2020-02-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -320,6 +326,8 @@
 <blockquote>
 <p>: （1）三变量法（经典）</p>
 </blockquote>
+</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a,b,t;</span><br><span class="line">	scanf(&quot;%d%d&quot;,&amp;a,&amp;b);</span><br><span class="line">	t&#x3D;a;</span><br><span class="line">	a&#x3D;b;</span><br><span class="line">	b&#x3D;t;</span><br><span class="line">	printf(&quot;%d %d\n&quot;,a,b);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>: （2）不借助任何变量（只适用于定义了加减法的数据类型）</p>
@@ -329,13 +337,13 @@
 <p>: （3）最适合本题的解法</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">int a,b;</span><br><span class="line">scanf(&quot;%d%d&quot;,&amp;a,&amp;b);</span><br><span class="line">printf(&quot;%d %d\n&quot;,b,a);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+
 <ul>
 <li>我们的目标是解决问题，而不是为了写程序而写程序，同时应保持简单（Keep It Simple and Stupid,KISS），而不是自己创造条件去展示编程技巧。</li>
 </ul>
 <h2 id="分支结构程序设计"><a href="#分支结构程序设计" class="headerlink" title="分支结构程序设计"></a>分支结构程序设计</h2><ol start="7">
-<li>鸡兔同笼：已知鸡和兔的总数量位n，总腿数为m。输入n和m，依次输出鸡的数目和兔的数目。如果无解则输出No answer。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a,b,n,m;</span><br><span class="line">	scanf(&quot;%d%d&quot;,&amp;n,&amp;m);</span><br><span class="line">	a&#x3D;(4*n-m)&#x2F;2;</span><br><span class="line">	b&#x3D;n-a;</span><br><span class="line">	if(m%2&#x3D;&#x3D;1||a&lt;0||b&lt;0)</span><br><span class="line">		printf(&quot;No answer\n&quot;);</span><br><span class="line">	else</span><br><span class="line">		printf(&quot;%d %d\n&quot;,a,b);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>鸡兔同笼：已知鸡和兔的总数量位n，总腿数为m。输入n和m，依次输出鸡的数目和兔的数目。如果无解则输出No answer。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a,b,n,m;</span><br><span class="line">	scanf(&quot;%d%d&quot;,&amp;n,&amp;m);</span><br><span class="line">	a&#x3D;(4*n-m)&#x2F;2;</span><br><span class="line">	b&#x3D;n-a;</span><br><span class="line">	if(m%2&#x3D;&#x3D;1||a&lt;0||b&lt;0)</span><br><span class="line">		printf(&quot;No answer\n&quot;);</span><br><span class="line">	else</span><br><span class="line">		printf(&quot;%d %d\n&quot;,a,b);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <ul>
 <li>C语言中的逻辑运算符都是短路运算符。一旦能够确定整个表达式的值，就不再继续计算。</li>
@@ -432,7 +440,10 @@
     <a href="/2020/02/13/welcome-to-Banhoo/" rel="prev" title="welcome to Banhoo">
       <i class="fa fa-chevron-left"></i> welcome to Banhoo
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/18/%E4%B9%A6%E8%AE%B0/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%EF%BC%88%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%EF%BC%89%E3%80%8B/%E7%AC%AC2%E7%AB%A0%20%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="next" title="书记/《算法竞赛（入门经典）》/第2章 循环结构程序设计">
+      书记/《算法竞赛（入门经典）》/第2章 循环结构程序设计 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -509,7 +520,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -850,13 +861,13 @@ if(canvas.getContext){
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">5k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
