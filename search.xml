@@ -61,9 +61,23 @@
 <ul>
 <li>要计算只包含加法、减法和乘法额整数表达式除以正整数n的余数，可以在每步计算之后对n取余，结果不变。</li>
 <li>可以使用time.h和clock()函数获得程序运行时间。常数CLOCKS_PER_SEC和操作系统相关，但是不要直接使用clock()的返回值，而应总是除以CLOCKS_PER_SEC。</li>
-<li>为了避免输入数据的时间影响测试结果，可以使用<strong>“管道”</strong>的小技巧：在Windows命令行下执行echo 20|abc，操作系统会自动把20输入，其中abc为程序名。</li>
+<li>为了避免输入数据的时间影响测试结果，可以使用<strong>“管道”</strong>的小技巧：在Windows命令行下执行<strong>echo 20|abc</strong>，操作系统会自动把20输入，其中abc为程序名。</li>
 </ul>
-]]></content>
+<h2 id="算法竞赛中的输入输出框架"><a href="#算法竞赛中的输入输出框架" class="headerlink" title="算法竞赛中的输入输出框架"></a>算法竞赛中的输入输出框架</h2><ol start="4">
+<li>数据统计：输入一些整数，求出它们的最小值、最大值和平均值（保留3位小数）。输入保证这些数都是不超过1000的整数。</li>
+</ol>
+<blockquote>
+<p>: 数据统计（重定向版）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#define LOCAL&#x2F;&#x2F;比赛提交之前删除即可</span><br><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#define INF 1000000000</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	FILE* stream;</span><br><span class="line">#ifdef LOCAL</span><br><span class="line">	freopen_s(&amp;stream,&quot;data.in&quot;,&quot;r&quot;,stdin);&#x2F;&#x2F;自己在程序文件夹中创建</span><br><span class="line">	freopen_s(&amp;stream,&quot;data.out&quot;,&quot;w&quot;,stdout);</span><br><span class="line">#endif</span><br><span class="line">	int x, n &#x3D; 0, min &#x3D; INF, max &#x3D; -INF, s &#x3D; 0;</span><br><span class="line">	while (scanf_s(&quot;%d&quot;, &amp;x) &#x3D;&#x3D; 1)</span><br><span class="line">	&#123;</span><br><span class="line">		s +&#x3D; x;</span><br><span class="line">		if (x &lt; min) min &#x3D; x;</span><br><span class="line">		if (x &gt; max) max &#x3D; x;</span><br><span class="line">		&#x2F;*printf(&quot;x&#x3D;%d,min&#x3D;%d,max&#x3D;%d\n&quot;,x,min,max);*&#x2F;</span><br><span class="line">		n++;</span><br><span class="line">	&#125;</span><br><span class="line">	printf(&quot;%d %d %.3f\n&quot;,min,max,(double)s&#x2F;n);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>scanf函数有返回值，它返回的是成功输入的变量个数，但输入结束时，scanf函数无法再次读取x，将返回0。</li>
+</ul>
+<blockquote>
+<p>: 数据统计（fopen版）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>书记</category>
         <category>《算法竞赛（入门经典）》</category>
