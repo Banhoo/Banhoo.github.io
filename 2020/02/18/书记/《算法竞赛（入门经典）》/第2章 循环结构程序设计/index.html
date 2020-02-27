@@ -33,7 +33,7 @@
 <meta property="og:description" content="第2章 循环结构程序设计for循环 : for循环的格式为：for(初始化；条件；调整) 循环体；">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-18T04:00:00.000Z">
-<meta property="article:modified_time" content="2020-02-25T03:24:33.036Z">
+<meta property="article:modified_time" content="2020-02-27T10:29:46.884Z">
 <meta property="article:author" content="Banhooxx">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -221,7 +221,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-25 11:24:33" itemprop="dateModified" datetime="2020-02-25T11:24:33+08:00">2020-02-25</time>
+                <time title="修改时间：2020-02-27 18:29:46" itemprop="dateModified" datetime="2020-02-27T18:29:46+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,14 +268,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.6k</span>
+              <span>5.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>5 分钟</span>
             </span>
 
         </div>
@@ -361,7 +361,16 @@
 <blockquote>
 <p>: 数据统计（fopen版）</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#define INF 100000000</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	errno_t err;</span><br><span class="line">	FILE* fin, * fout;</span><br><span class="line">	&#x2F;&#x2F;fin &#x3D; stdin;</span><br><span class="line">	&#x2F;&#x2F;fout &#x3D; stdout;</span><br><span class="line">	err &#x3D; fopen_s(&amp;fin,&quot;data.in&quot;,&quot;rb&quot;);</span><br><span class="line">	err &#x3D; fopen_s(&amp;fout,&quot;data.out&quot;,&quot;wb&quot;);</span><br><span class="line">	int x, n &#x3D; 0, min &#x3D; INF, max &#x3D; -INF, s &#x3D; 0;</span><br><span class="line">	while (fscanf_s(fin, &quot;%d&quot;, &amp;x) &#x3D;&#x3D; 1)</span><br><span class="line">	&#123;</span><br><span class="line">		s +&#x3D; x;</span><br><span class="line">		if (x &lt; min) min &#x3D; x;</span><br><span class="line">		if (x &gt; max) max &#x3D; x;</span><br><span class="line">		n++;</span><br><span class="line">	&#125;</span><br><span class="line">	fprintf_s(fout,&quot;%d %d %.3f\n&quot;,min,max,(double)s&#x2F;n);</span><br><span class="line">	fclose(fin);</span><br><span class="line">	fclose(fout);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果想把fopen版的程序改成读写标准输入输出，只需赋值“fin=stdin，fout=stdout”，即可，不需要调用fopen和fclose。</li>
+</ul>
+<hr>
+<blockquote>
+<p>: 习题2-5 分数化小数<br>输入正整数a，b，c，输出a/b的小数形式，精确到小数点后c位。a，b&lt;=10^6,c&lt;=100。输入包含多组数据，结束标记位a=b=c=0。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int n, m[110];&#x2F;&#x2F;n整数部分，m小数部分 </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int a, b, c, i, k &#x3D; 0;</span><br><span class="line">    while (scanf_s(&quot;%d%d%d&quot;, &amp;a, &amp;b, &amp;c) &amp;&amp; a &amp;&amp; b &amp;&amp; c)</span><br><span class="line">    &#123;</span><br><span class="line">        k++;</span><br><span class="line">        n &#x3D; a &#x2F; b;</span><br><span class="line">        a &#x3D; a % b;</span><br><span class="line">        m[0] &#x3D; 0;&#x2F;&#x2F;十分位小数，可以进位为整数</span><br><span class="line">        for (i &#x3D; 1; i &lt;&#x3D; c; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            m[i] &#x3D; a * 10 &#x2F; b;</span><br><span class="line">            a &#x3D; a * 10 % b;</span><br><span class="line">        &#125;</span><br><span class="line">        if (a * 10 &#x2F; b &gt;&#x3D; 5)&#x2F;&#x2F;第C+1位，四舍五入</span><br><span class="line">        &#123;</span><br><span class="line">            for (i &#x3D; c; i &gt;&#x3D; 0; i--)&#x2F;&#x2F;进位处理 </span><br><span class="line">            &#123;</span><br><span class="line">                m[i] &#x3D; m[i] + 1;</span><br><span class="line">                if (m[i] &lt; 10)</span><br><span class="line">                    break;&#x2F;&#x2F;若不存在进位，跳出循环。 </span><br><span class="line">                else</span><br><span class="line">                    m[i] -&#x3D; 10;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        n &#x3D; n + m[0];&#x2F;&#x2F;整数部分进位处理。 </span><br><span class="line">        printf(&quot;Case %d: %d.&quot;, k, n);&#x2F;&#x2F;打印整数部分及小数点</span><br><span class="line">        for (i &#x3D; 1; i &lt;&#x3D; c; i++)</span><br><span class="line">            printf(&quot;%d&quot;, m[i]);&#x2F;&#x2F;打印小数部分。 </span><br><span class="line">        printf(&quot;\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -867,13 +876,13 @@ if(canvas.getContext){
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">7k</span>
+    <span title="站点总字数">8k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
