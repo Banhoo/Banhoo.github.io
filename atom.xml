@@ -27,10 +27,9 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;第2章-循环结构程序设计&quot;&gt;&lt;a href=&quot;#第2章-循环结构程序设计&quot; class=&quot;headerlink&quot; title=&quot;第2章 循环结构程序设计&quot;&gt;&lt;/a&gt;第2章 循环结构程序设计&lt;/h1&gt;&lt;h2 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; c
-      
+      &lt;h1 id=&quot;第2章-循环结构程序设计&quot;&gt;&lt;a href=&quot;#第2章-循环结构程序设计&quot; class=&quot;headerlink&quot; title=&quot;第2章 循环结构程序设计&quot;&gt;&lt;/a&gt;第2章 循环结构程序设计&lt;/h1&gt;&lt;h2 id=&quot;for循环&quot;&gt;&lt;a href=&quot;#for循环&quot; class=&quot;headerlink&quot; title=&quot;for循环&quot;&gt;&lt;/a&gt;for循环&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;for循环的格式为：for(初始化；条件；调整) 循环体；&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -55,10 +54,10 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;第1章-程序设计入门&quot;&gt;&lt;a href=&quot;#第1章-程序设计入门&quot; class=&quot;headerlink&quot; title=&quot;第1章 程序设计入门&quot;&gt;&lt;/a&gt;第1章 程序设计入门&lt;/h1&gt;&lt;h2 id=&quot;算数表达式&quot;&gt;&lt;a href=&quot;#算数表达式&quot; class=&quot;he
-      
+      &lt;h1 id=&quot;第1章-程序设计入门&quot;&gt;&lt;a href=&quot;#第1章-程序设计入门&quot; class=&quot;headerlink&quot; title=&quot;第1章 程序设计入门&quot;&gt;&lt;/a&gt;第1章 程序设计入门&lt;/h1&gt;&lt;h2 id=&quot;算数表达式&quot;&gt;&lt;a href=&quot;#算数表达式&quot; class=&quot;headerlink&quot; title=&quot;算数表达式&quot;&gt;&lt;/a&gt;算数表达式&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int main()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	printf(&amp;quot;%.1f\n&amp;quot;,8.0&amp;#x2F;5.0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -108,10 +107,8 @@
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;
     
     </summary>
     
