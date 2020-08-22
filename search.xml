@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>归并排序</title>
+    <url>/2020/08/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h1>]]></content>
+      <categories>
+        <category>书记</category>
+        <category>《数据结构与算法分析》</category>
+      </categories>
+      <tags>
+        <tag>书记</tag>
+        <tag>算法</tag>
+        <tag>归并排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>二叉堆</title>
     <url>/2020/08/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E4%BA%8C%E5%8F%89%E5%A0%86/</url>
     <content><![CDATA[<h1 id="二叉堆"><a href="#二叉堆" class="headerlink" title="二叉堆"></a>二叉堆</h1><h2 id="堆基类"><a href="#堆基类" class="headerlink" title="堆基类"></a>堆基类</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">class</span> <span class="title">Heap</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="comment">//Heap()=default;</span></span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">ShowHeap</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">bool</span> <span class="title">Insert</span><span class="params">(T)</span> </span>= <span class="number">0</span>;</span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> T <span class="title">Delete</span><span class="params">(T&amp;)</span> </span>= <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
@@ -26,21 +40,8 @@
       </categories>
       <tags>
         <tag>书记</tag>
+        <tag>数据结构</tag>
         <tag>二叉堆</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>归并排序</title>
-    <url>/2020/08/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h1 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h1>]]></content>
-      <categories>
-        <category>书记</category>
-        <category>《数据结构与算法分析》</category>
-      </categories>
-      <tags>
-        <tag>书记</tag>
-        <tag>算法</tag>
-        <tag>归并排序</tag>
       </tags>
   </entry>
   <entry>
@@ -168,30 +169,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HDUOJ/2021</title>
-    <url>/2020/05/31/HDUOJ/2021/</url>
-    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>作为杭电的老师，最盼望的日子就是每月的8号了，因为这一天是发工资的日子，养家糊口就靠它了，呵呵<br>但是对于学校财务处的工作人员来说，这一天则是很忙碌的一天，财务处的小胡老师最近就在考虑一个问题：如果每个老师的工资额都知道，最少需要准备多少张人民币，才能在给每位老师发工资的时候都不用老师找零呢？<br>这里假设老师的工资都是正整数，单位元，人民币一共有100元、50元、10元、5元、2元和1元六种。</p>
-<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a><strong>输入</strong></h1><p>输入数据包含多个测试实例，每个测试实例的第一行是一个整数n（n&lt;100），表示老师的人数，然后是n个老师的工资。<br>n=0表示输入的结束，不做处理。</p>
-<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a><strong>输出</strong></h1><p>对于每个测试实例输出一个整数x,表示至少需要准备的人民币张数。每个输出占一行。</p>
-<h1 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3</span><br><span class="line">1 2 3</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-
-<h1 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h1 id="代码（C-）"><a href="#代码（C-）" class="headerlink" title="代码（C++）"></a><strong>代码（C++）</strong></h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">105</span>] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; a[i];</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> temp = a[i];</span><br><span class="line">			<span class="keyword">if</span> (temp / <span class="number">100</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">100</span>; temp -= temp / <span class="number">100</span> * <span class="number">100</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">50</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">50</span>; temp -= temp / <span class="number">50</span> * <span class="number">50</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">10</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">10</span>; temp -= temp / <span class="number">10</span> * <span class="number">10</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">5</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">5</span>; temp -= temp / <span class="number">5</span> * <span class="number">5</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">2</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">2</span>; temp -= temp / <span class="number">2</span> * <span class="number">2</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">1</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">1</span>; temp -= temp / <span class="number">1</span> * <span class="number">1</span>; &#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>HDUOJ</category>
-      </categories>
-      <tags>
-        <tag>HDUOJ</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HDUOJ/2022</title>
     <url>/2020/05/31/HDUOJ/2022/</url>
     <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>potato老师虽然很喜欢教书，但是迫于生活压力，不得不想办法在业余时间挣点外快以养家糊口。<br>“做什么比较挣钱呢？筛沙子没力气，看大门又不够帅…”potato老师很是无奈。<br>“张艺谋比你还难看，现在多有钱呀，听说还要导演奥运开幕式呢！你为什么不去娱乐圈发展呢？”lwg在一旁出主意。<br>嗯，也是，为了生存，就委屈点到娱乐圈混混吧，马上就拍一部激光电影《杭电记忆——回来我的爱》。<br>说干就干，马上海选女主角（和老谋子学的，此举可以吸引媒体的眼球，呵呵），并且特别规定，演员必须具有ac的基本功，否则直接out!<br>由于策划师风之鱼（大师级水王）宣传到位，来应聘的MM很多，当然包括nit的蛋糕妹妹等呼声很高的美女，就连zjut的jqw都男扮女装来应聘（还好被安全顾问hdu_Bin-Laden认出，给轰走了），看来娱乐圈比acm还吸引人哪…<br>面试那天，刚好来了m<em>n个MM，站成一个m</em>n的队列，副导演Fe(OH)2为每个MM打了分数，分数都是32位有符号整数。<br>一开始我很纳闷：分数怎么还有负的？Fe(OH)2解释说，根据选拔规则，头发染成黄色、化妆太浓、穿的太少等等都要扣分数的，扣的多了就可能是负分了，当然，如果发现话语中夹有日语，就直接给-2147483648分了。<br>分数送上来了，是我做决定的时候了，我的一个选拔原则是，要选一个面试分数绝对值（必须还是32位整数）最大的MM。<br>特别说明：如果不幸选中一个负分的MM,也没关系，因为我觉得，如果不能吸引你，那要想法恶心你。</p>
@@ -206,6 +183,30 @@
 
 
 <h1 id="代码（C-）"><a href="#代码（C-）" class="headerlink" title="代码（C++）"></a><strong>代码（C++）</strong></h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10000</span>] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> <span class="built_in">max</span>;</span><br><span class="line">	<span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> m, n;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; m &gt;&gt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m * n; i++)</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; a[i];</span><br><span class="line">		<span class="built_in">max</span> = <span class="built_in">abs</span>(a[<span class="number">0</span>]);</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m * n; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> temp = <span class="built_in">abs</span>(a[i]);</span><br><span class="line">			<span class="keyword">if</span> (temp &gt; <span class="built_in">max</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">max</span> = temp;</span><br><span class="line">				index = i;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; index / n + <span class="number">1</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; index % n + <span class="number">1</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; a[index] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>HDUOJ</category>
+      </categories>
+      <tags>
+        <tag>HDUOJ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HDUOJ/2021</title>
+    <url>/2020/05/31/HDUOJ/2021/</url>
+    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>作为杭电的老师，最盼望的日子就是每月的8号了，因为这一天是发工资的日子，养家糊口就靠它了，呵呵<br>但是对于学校财务处的工作人员来说，这一天则是很忙碌的一天，财务处的小胡老师最近就在考虑一个问题：如果每个老师的工资额都知道，最少需要准备多少张人民币，才能在给每位老师发工资的时候都不用老师找零呢？<br>这里假设老师的工资都是正整数，单位元，人民币一共有100元、50元、10元、5元、2元和1元六种。</p>
+<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a><strong>输入</strong></h1><p>输入数据包含多个测试实例，每个测试实例的第一行是一个整数n（n&lt;100），表示老师的人数，然后是n个老师的工资。<br>n=0表示输入的结束，不做处理。</p>
+<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a><strong>输出</strong></h1><p>对于每个测试实例输出一个整数x,表示至少需要准备的人民币张数。每个输出占一行。</p>
+<h1 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3</span><br><span class="line">1 2 3</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<h1 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="代码（C-）"><a href="#代码（C-）" class="headerlink" title="代码（C++）"></a><strong>代码（C++）</strong></h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">105</span>] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; a[i];</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> temp = a[i];</span><br><span class="line">			<span class="keyword">if</span> (temp / <span class="number">100</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">100</span>; temp -= temp / <span class="number">100</span> * <span class="number">100</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">50</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">50</span>; temp -= temp / <span class="number">50</span> * <span class="number">50</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">10</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">10</span>; temp -= temp / <span class="number">10</span> * <span class="number">10</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">5</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">5</span>; temp -= temp / <span class="number">5</span> * <span class="number">5</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">2</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">2</span>; temp -= temp / <span class="number">2</span> * <span class="number">2</span>; &#125;</span><br><span class="line">			<span class="keyword">if</span> (temp != <span class="number">0</span> &amp;&amp; temp / <span class="number">1</span> != <span class="number">0</span>) &#123; sum += temp / <span class="number">1</span>; temp -= temp / <span class="number">1</span> * <span class="number">1</span>; &#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -264,6 +265,30 @@
       </tags>
   </entry>
   <entry>
+    <title>HDUOJ/2017</title>
+    <url>/2020/05/26/HDUOJ/2017/</url>
+    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>对于给定的一个字符串，统计其中数字字符出现的次数。</p>
+<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a><strong>输入</strong></h1><p>输入数据有多行，第一行是一个整数n，表示测试实例的个数，后面跟着n行，每行包括一个由字母和数字组成的字符串。</p>
+<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a><strong>输出</strong></h1><p>对于每个测试实例，输出该串中数值的个数，每个输出占一行。</p>
+<h1 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2</span><br><span class="line">asdfasdf123123asdfasdf</span><br><span class="line">asdf111111111asdfasdfasdf</span><br></pre></td></tr></table></figure>
+
+<h1 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">6</span><br><span class="line">9</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="代码（C-）"><a href="#代码（C-）" class="headerlink" title="代码（C++）"></a><strong>代码（C++）</strong></h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	<span class="keyword">while</span> (n--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">string</span> s;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; s;</span><br><span class="line">		<span class="keyword">int</span> len = s.length();</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)</span><br><span class="line">			<span class="keyword">if</span> (s[i] &gt;= <span class="number">48</span> &amp;&amp; s[i] &lt;= <span class="number">57</span>) sum++;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>HDUOJ</category>
+      </categories>
+      <tags>
+        <tag>HDUOJ</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HDUOJ/2018</title>
     <url>/2020/05/26/HDUOJ/2018/</url>
     <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>有一头母牛，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？</p>
@@ -312,30 +337,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HDUOJ/2017</title>
-    <url>/2020/05/26/HDUOJ/2017/</url>
-    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>对于给定的一个字符串，统计其中数字字符出现的次数。</p>
-<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a><strong>输入</strong></h1><p>输入数据有多行，第一行是一个整数n，表示测试实例的个数，后面跟着n行，每行包括一个由字母和数字组成的字符串。</p>
-<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a><strong>输出</strong></h1><p>对于每个测试实例，输出该串中数值的个数，每个输出占一行。</p>
-<h1 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2</span><br><span class="line">asdfasdf123123asdfasdf</span><br><span class="line">asdf111111111asdfasdfasdf</span><br></pre></td></tr></table></figure>
-
-<h1 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a><strong>样例输入</strong></h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">6</span><br><span class="line">9</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h1 id="代码（C-）"><a href="#代码（C-）" class="headerlink" title="代码（C++）"></a><strong>代码（C++）</strong></h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	<span class="keyword">while</span> (n--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">string</span> s;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; s;</span><br><span class="line">		<span class="keyword">int</span> len = s.length();</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)</span><br><span class="line">			<span class="keyword">if</span> (s[i] &gt;= <span class="number">48</span> &amp;&amp; s[i] &lt;= <span class="number">57</span>) sum++;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>HDUOJ</category>
-      </categories>
-      <tags>
-        <tag>HDUOJ</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HDUOJ/2015</title>
     <url>/2020/05/25/HDUOJ/2015/</url>
     <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p>有一个长度为n(n&lt;=100)的数列，该数列定义为从2开始的递增有序偶数，现在要求你按照顺序每m个数求出一个平均值，如果最后不足m个，则以实际数量求平均值。编程输出该平均值序列。</p>
@@ -360,7 +361,7 @@
       </tags>
   </entry>
   <entry>
-    <title>链表</title>
+    <title>循环队列</title>
     <url>/2020/03/24/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</url>
     <content><![CDATA[<h1 id="循环队列"><a href="#循环队列" class="headerlink" title="循环队列"></a>循环队列</h1><h2 id="数组实现"><a href="#数组实现" class="headerlink" title="数组实现"></a>数组实现</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;memory&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXSIZE 50</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">class</span> <span class="title">LoopQueue</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">int</span> front;										<span class="comment">//头指针</span></span><br><span class="line">	<span class="keyword">int</span> rear;										<span class="comment">//尾指针</span></span><br><span class="line">	T* <span class="built_in">queue</span>;										<span class="comment">//指向存储数据的队列数组</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	LoopQueue();									<span class="comment">//初始化队列</span></span><br><span class="line">	~LoopQueue();									<span class="comment">//销毁队列</span></span><br><span class="line">	<span class="function"><span class="keyword">bool</span> <span class="title">isEmpty</span><span class="params">()</span></span>;									<span class="comment">//判断队列是否为空</span></span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;										<span class="comment">//返回队列的长度</span></span><br><span class="line">	<span class="function"><span class="keyword">bool</span> <span class="title">push</span><span class="params">(T element)</span></span>;							<span class="comment">//进队</span></span><br><span class="line">	<span class="function"><span class="keyword">bool</span> <span class="title">pop</span><span class="params">()</span></span>;										<span class="comment">//出队</span></span><br><span class="line">	<span class="function">T <span class="title">top</span><span class="params">()</span></span>;										<span class="comment">//获取队首元素</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">Traverse</span><span class="params">()</span></span>;								<span class="comment">//遍历队列内的元素</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">LoopQueue</span>&lt;T&gt;:</span>:LoopQueue()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">queue</span> = <span class="keyword">new</span> T[MAXSIZE];							<span class="comment">//为队列分配内存</span></span><br><span class="line">	front = rear = <span class="number">0</span>;								<span class="comment">//初始化队列为空，头尾指针在同一位置</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">LoopQueue</span>&lt;T&gt;:</span>:~LoopQueue()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">delete</span>[] <span class="built_in">queue</span>;									<span class="comment">//释放内存</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">LoopQueue</span>&lt;T&gt;:</span>:isEmpty()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> (front == rear);							<span class="comment">//如果头尾指针位置相同则为空</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">int</span> <span class="title">LoopQueue</span>&lt;T&gt;:</span>:<span class="built_in">size</span>()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">return</span> (rear - front + MAXSIZE) % MAXSIZE;		<span class="comment">//计算公式</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">LoopQueue</span>&lt;T&gt;:</span>:push(T e)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> ((rear + <span class="number">1</span>) % MAXSIZE == front)				<span class="comment">//如果队列已满，则返回false</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"Error: Queue is full, can not push !"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">queue</span>[rear] = e;								<span class="comment">//否则从队尾进</span></span><br><span class="line">	rear = (rear + <span class="number">1</span>) % MAXSIZE;					<span class="comment">//将尾指针指向后一个区域</span></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">LoopQueue</span>&lt;T&gt;:</span>:pop()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (rear == front)								<span class="comment">//如果队列为空，则返回false</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"Error: Queue is empty, can not pop !"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	front = (front + <span class="number">1</span>) % MAXSIZE;					<span class="comment">//将头指针指向后一个区域</span></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">T</span> <span class="title">LoopQueue</span>&lt;T&gt;:</span>:top()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (rear == front)								<span class="comment">//如果队列为空，则返回</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"Error: Queue is empty, can not pop !"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">queue</span>[front];							<span class="comment">//否则返回头指针指向的数据</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">void</span> <span class="title">LoopQueue</span>&lt;T&gt;:</span>:Traverse()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span> (rear == front)								<span class="comment">//如果队列为空，则返回</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"Error: Queue is empty, can not pop !"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> i = front;									<span class="comment">//定义变量i来记录头指针的下标</span></span><br><span class="line">	<span class="keyword">while</span> (i != rear)								<span class="comment">//没有和尾指针重合（遍历队列不为空）</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="built_in">queue</span>[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">		i = (i + <span class="number">1</span>) % MAXSIZE;						<span class="comment">//将i指向后一个区域</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	LoopQueue&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">		q.push(i);</span><br><span class="line">	q.Traverse();</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; q.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	q.pop();</span><br><span class="line">	q.Traverse();</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; q.top() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -375,8 +376,8 @@
       </categories>
       <tags>
         <tag>书记</tag>
-        <tag>算法</tag>
-        <tag>归并排序</tag>
+        <tag>数据结构</tag>
+        <tag>循环队列</tag>
       </tags>
   </entry>
   <entry>
